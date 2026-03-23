@@ -44,12 +44,20 @@ The system consists of two main components:
 
 4. Create a `.env` file in the project root:
    ```
+   # =========================
+   # APP
+   # =========================
    PORT=8080
+   NODE_ENV=development
+   
+   # =========================
+   # DATABASE (used by Node)
+   # =========================
    DB_HOST=localhost
+   DB_PORT=5432
    DB_USER=your_db_username
    DB_PASS=your_db_password
-   DB_NAME=tapp_db
-   DB_PORT=5432
+   DB_NAME=tapp_battery
    ```
 
 5. Install ESP8266 support in Arduino IDE (for ESP-12 board):
