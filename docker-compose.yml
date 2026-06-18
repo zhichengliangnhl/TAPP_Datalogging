@@ -13,6 +13,16 @@ services:
     depends_on:
       - tapp-db
 
+  tapp-dashboard:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: tapp-dashboard
+    ports:
+      - "3001:80"
+    depends_on:
+      - tapp-backend
+
   tapp-nfc:
     build:
       context: .
